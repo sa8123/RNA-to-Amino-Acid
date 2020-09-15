@@ -12,14 +12,6 @@ from ReadFile import readfasta
 
 
 def rna2aa(rna):
-    # replace the following line with the real code of this function
-    #get the amino acid dictionary.
-    #This is the way to access dictionary elements.
-    #print(gene.code["UUG"])
-    # print("Debugger for dict")
-    # print(gene.code[rna[3:6]])
-    # print("Debugger from rna2aa method")
-    # print(rna[0:10])
     not_finished = True
     amino_acid = ''
     index = 0
@@ -37,8 +29,6 @@ def rna2aa(rna):
     return amino_acid
 
 def main():
-    # read in the rna from disk
-    # we will process only the first sequence in the fasta file
     rnainfo = readfasta('Assignment1Sequences.txt')
     sequence_1 = rnainfo[0]
     sequence_2 = rnainfo[1]
